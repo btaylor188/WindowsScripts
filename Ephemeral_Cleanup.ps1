@@ -1,0 +1,1 @@
+﻿Get-ChildItem -Path $env:USERPROFILE\Desktop\Ephemeral  -recurse | Where-Object CreationTime -LT (Get-Date).AddDays(-1) | Remove-Item -Recurse -Force
